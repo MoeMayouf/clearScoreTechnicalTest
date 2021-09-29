@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ClearScoreTest</string>
+    <string name="score_label">Your score is</string>
+</resources>
