@@ -37,7 +37,7 @@ class CreditReportFragment : Fragment() {
                 fragmentCreditReportBinding!!.donutCreditScoreValue.visibility = View.GONE
                 fragmentCreditReportBinding!!.errorMessage.visibility = View.GONE
             } else {
-                fragmentCreditReportBinding!!.progressBar.visibility = View.GONE
+                fragmentCreditReportBinding!!.progressBar.visibility = View.INVISIBLE
                 fragmentCreditReportBinding!!.donutScoreLabel.visibility = View.VISIBLE
                 fragmentCreditReportBinding!!.donutMaxScoreValue.visibility = View.VISIBLE
                 fragmentCreditReportBinding!!.donutCreditScoreValue.visibility = View.VISIBLE
@@ -63,7 +63,7 @@ class CreditReportFragment : Fragment() {
         })
 
         viewModel.errorLiveData.observe(viewLifecycleOwner, {
-            fragmentCreditReportBinding!!.progressBar.visibility = View.GONE
+            fragmentCreditReportBinding!!.progressBar.visibility = View.INVISIBLE
             fragmentCreditReportBinding!!.donutScoreLabel.visibility = View.GONE
             fragmentCreditReportBinding!!.donutMaxScoreValue.visibility = View.GONE
             fragmentCreditReportBinding!!.donutCreditScoreValue.visibility = View.GONE
